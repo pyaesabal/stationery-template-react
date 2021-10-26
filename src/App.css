@@ -45,11 +45,77 @@
   box-shadow: 2px 0px 8px -1px #b3adad;
   border-radius: 1%;
 }
-.img-thumbnail {
+.brands .img-thumbnail {
   padding: 1.25rem;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+  margin-bottom: 10px;
 }
-.brands,.discount{
+/* .brands,.discount{
   margin-top: 30px;
   margin-bottom: 30px;
   border-bottom: 2px solid #b80000;
+} */
+.card-body button{
+  width: 100%;
+  background-color: #b80000;
+  border: none;
+}
+.card-title{
+  color: #b80000;
+}
+@media (min-width: 1200px){
+  .container {
+      max-width: 1420px;
+  }
+}
+.block-title{
+  width: 100%;
+  border-bottom: 1px solid #b80000;
+  margin:30px 0;
+  padding-bottom: 5px;
+}
+.products{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-gap: 10px;
+}
+.brands{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-gap: 10px;
+}
+body{
+  background-color: #f6f6f6;
+}
+.header-top{
+  background-color: #f6f6f6 ;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #ffffff;
+}
+nav{
+  background-color: #b80000;
+}
+.header-top h3{
+  color: #b80000;
+}
+.list-group-item {
+  padding: 0.64rem 1.25rem;
+}
+.card{
+  box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+  border: 1px solid rgb(255 255 255);
+}
+.info{
+  line-height: 2;
+  font-size: 18px;
+}
+.btn-outline-secondary {
+  color: #ffffff;
+  border-color: #b80000;
+  background: #b80000;
+  border-radius: 0;
+} 
+.form-control{
+  border: 2px solid #b80000;
 }
