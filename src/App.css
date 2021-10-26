@@ -79,7 +79,7 @@
   grid-template-columns: repeat(5,1fr);
   grid-gap: 10px;
 }
-.brands{
+.brands,.categories{
   display: grid;
   grid-template-columns: repeat(6,1fr);
   grid-gap: 10px;
@@ -118,4 +118,18 @@ nav{
 } 
 .form-control{
   border: 2px solid #b80000;
+}
+svg.svg-inline--fa.fa-cart-plus.fa-w-18 {
+  margin-right: 10px;
+  color: #b80000;
+  font-size: 25px;
+}
+.categories .card img{
+  border-radius: 50%;
+  width: 80px;
+  text-align: center;
+  margin: 0 auto;
+}
+.categories .card{
+  text-align: center;
 }

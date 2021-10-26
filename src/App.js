@@ -13,8 +13,9 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import Image from 'react-bootstrap/Image';
 import Card from 'react-bootstrap/Card';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheckSquare, faCoffee,faSearch } from '@fortawesome/free-solid-svg-icons'
+import { faCheckSquare, faCoffee,faSearch, faCartPlus } from '@fortawesome/free-solid-svg-icons';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 const Header = () =>{
   return (
@@ -30,9 +31,9 @@ const Header = () =>{
             </Col>
             <Col>
               <Row className="info">
-                <Col>login</Col>
+                <Col>Login</Col>
                 <Col>Register</Col>
-                <Col>$0.0</Col>
+                <Col><FontAwesomeIcon icon={faCartPlus} />$0.0</Col>
               </Row>
             </Col>
           </Row>
@@ -83,7 +84,7 @@ const Banner = () =>{
               <ListGroup.Item>Morbi leo risus</ListGroup.Item>         
             </ListGroup>
           </Col>
-          <Col xs={9} className="pl-0 pr-0">
+          <Col xs={9} className="p-0">
             <Carousel>
               <Carousel.Item>
                 <img className="d-block w-100" src="https://naychistationery.com/wp-content/uploads/2020/12/Untitled-1-8-909x350.jpg" alt="First slide" />
@@ -321,6 +322,88 @@ const BestSellingProducts = () =>{
   )
 }
 
+const Categories = () =>{
+  return (
+    <div className="block-categories">
+      <Container>
+          <Row className="categories">
+            <Card>
+              <Card.Img variant="top" src="https://naychistationery.com/wp-content/uploads/2021/07/clip-board.png" />
+              <Card.Body>
+                <Card.Title>Card Title</Card.Title>
+                <Card.Text>
+                  Some quick example text to build on the card title and make up the bulk of
+                  the card's content.
+                </Card.Text>
+                <Button variant="primary">Go somewhere</Button>
+              </Card.Body>
+            </Card>
+
+            <Card>
+              <Card.Img variant="top" src="https://naychistationery.com/wp-content/uploads/2021/07/clip-board.png" />
+              <Card.Body>
+                <Card.Title>Card Title</Card.Title>
+                <Card.Text>
+                  Some quick example text to build on the card title and make up the bulk of
+                  the card's content.
+                </Card.Text>
+                <Button variant="primary">Go somewhere</Button>
+              </Card.Body>
+            </Card>
+
+            <Card>
+              <Card.Img variant="top" src="https://naychistationery.com/wp-content/uploads/2021/07/clip-board.png" />
+              <Card.Body>
+                <Card.Title>Card Title</Card.Title>
+                <Card.Text>
+                  Some quick example text to build on the card title and make up the bulk of
+                  the card's content.
+                </Card.Text>
+                <Button variant="primary">Go somewhere</Button>
+              </Card.Body>
+            </Card>
+
+            <Card>
+              <Card.Img variant="top" src="https://naychistationery.com/wp-content/uploads/2021/07/clip-board.png" />
+              <Card.Body>
+                <Card.Title>Card Title</Card.Title>
+                <Card.Text>
+                  Some quick example text to build on the card title and make up the bulk of
+                  the card's content.
+                </Card.Text>
+                <Button variant="primary">Go somewhere</Button>
+              </Card.Body>
+            </Card>
+
+            <Card>
+              <Card.Img variant="top" src="https://naychistationery.com/wp-content/uploads/2021/07/clip-board.png" />
+              <Card.Body>
+                <Card.Title>Card Title</Card.Title>
+                <Card.Text>
+                  Some quick example text to build on the card title and make up the bulk of
+                  the card's content.
+                </Card.Text>
+                <Button variant="primary">Go somewhere</Button>
+              </Card.Body>
+            </Card>
+
+            <Card>
+              <Card.Img variant="top" src="https://naychistationery.com/wp-content/uploads/2021/07/clip-board.png" />
+              <Card.Body>
+                <Card.Title>Card Title</Card.Title>
+                <Card.Text>
+                  Some quick example text to build on the card title and make up the bulk of
+                  the card's content.
+                </Card.Text>
+                <Button variant="primary">Go somewhere</Button>
+              </Card.Body>
+            </Card>
+          </Row>
+      </Container>
+    </div>
+  )
+}
+
 const App = () => (
   <>
   
@@ -330,6 +413,7 @@ const App = () => (
     <DiscountProducts/>
     <NewArrivalProducts/>
     <BestSellingProducts/>
+    <Categories/>
   
   </>
   
