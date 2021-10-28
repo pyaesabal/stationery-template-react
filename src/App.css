@@ -319,7 +319,50 @@ span.price,.discount-price {
 .modal-title {
   color: #ffffff;
 }
-
+.cat-page {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 1.25rem;
+}
+.cat-box {
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  text-align: center;
+}
+.cat-name {
+  font-size: 20px;
+  line-height: 1;
+  color: #222222;
+  text-transform: uppercase;
+  font-weight: 700;
+  min-width: 164px;
+  margin: 0;
+  padding: 11px 10px 19px;
+}
+a.cat-info {
+  display: inline-block;
+  border: 2px solid #e6e6e6;
+  position: relative;
+  margin-bottom: 40px;
+  margin-top: -30px;
+  background-color: #f6f6f6;
+}
+span.cat-number {
+  font-size: 14px;
+  color: #666666;
+  font-family: 'Playfair Display', sans-serif;
+  font-style: italic;
+  background-color: #f6f6f6;
+  display: inline-block;
+  min-width: 90px;
+  line-height: 1;
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  margin-left: -45px;
+}
 @media (max-width: 576px){
   .d-xs-block{
     display: block!important;
