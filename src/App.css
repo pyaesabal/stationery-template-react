@@ -233,3 +233,19 @@ span.price,.discount-price {
 .discount-price{
   color: #b80000;
 }
+.block-title .view-all{
+  text-align: right;
+}
+.block-title .view-all a{
+  color: #212529;
+  text-decoration: none;
+}
+
+@media (max-width: 576px){
+  .d-xs-block{
+    display: block!important;
+  }
+  .d-xs-none{
+    display: none!important;
+  }
+}

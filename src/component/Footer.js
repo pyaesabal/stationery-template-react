@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ListGroup from 'react-bootstrap/ListGroup';
+import Image from 'react-bootstrap/Image';
 import React from 'react';
 
 const Footer = () =>{
@@ -35,7 +36,7 @@ const Footer = () =>{
             </Col>
             <Col>
               <h5>Payment Method</h5>
-              <img src="https://naychistationery.com/wp-content/uploads/2020/12/payments-method.png" alt=""></img>
+                  <Image src="https://naychistationery.com/wp-content/uploads/2020/12/payments-method.png" thumbnail />
             </Col>
           </Row>
         </Container>

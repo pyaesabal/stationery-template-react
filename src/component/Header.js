@@ -13,7 +13,8 @@ import React from 'react';
 
 const Header = () =>{
     return (
-        <div className="header-top mt-3">
+      <>
+        <div className="header-top mt-3 desktop">
           <Container>
             <Row>
               <Col><h3>Logo Here</h3></Col>
@@ -27,6 +28,8 @@ const Header = () =>{
                 <Row className="info">
                   <Col>Login</Col>
                   <Col>Register</Col>
+                  <Col className="d-none d-xs-block "><FontAwesomeIcon icon={faCartPlus} />$0.0</Col>
+                  <Col className="d-none d-xs-block "><FontAwesomeIcon icon={faCartPlus} />$0.0</Col>
                   <Col><FontAwesomeIcon icon={faCartPlus} />$0.0</Col>
                 </Row>
               </Col>
@@ -56,6 +59,7 @@ const Header = () =>{
           </Navbar>
           
         </div>
+      </>
     );
   };
 

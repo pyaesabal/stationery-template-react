@@ -8,7 +8,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import Image from 'react-bootstrap/Image';
 import Card from 'react-bootstrap/Card';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGift } from '@fortawesome/free-solid-svg-icons';
+import { faGift, faEye } from '@fortawesome/free-solid-svg-icons';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import  ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Dropdown from 'react-bootstrap/Dropdown';
@@ -196,7 +196,16 @@ const DiscountProducts = () =>{
     <>
       <Container>
             <Row>
-            <h4 className="block-title">Discount Products</h4>
+              <div className="block-title d-flex">
+                  <Col xs={10}>
+                      <h4>Discount Products</h4>
+                  </Col>
+                  <Col className="view-all">
+                      <a href=""><FontAwesomeIcon icon={faEye} /> View All</a>
+                  </Col>
+              </div>
+              
+            
               <div className="products">
                 <Card>
                   <Card.Img variant="top" src="https://naychistationery.com/wp-content/uploads/2021/06/EB-Super-2-scaled-1-300x300.jpg" />
@@ -296,7 +305,14 @@ const NewArrivalProducts = () =>{
     <>
       <Container>
             <Row>
-            <h4 className="block-title">New Arrival Products</h4>
+            <div className="block-title d-flex">
+                  <Col xs={10}>
+                      <h4>New Arrival Products</h4>
+                  </Col>
+                  <Col className="view-all">
+                      <a href=""><FontAwesomeIcon icon={faEye} /> View All</a>
+                  </Col>
+              </div>
               <div className="products">
                 <Card>
                   <Card.Img variant="top" src="https://naychistationery.com/wp-content/uploads/2021/06/EB-Super-2-scaled-1-300x300.jpg" />
@@ -360,7 +376,14 @@ const BestSellingProducts = () =>{
     <>
       <Container>
             <Row>
-          <h4 className="block-title">Best Selling Products</h4>
+            <div className="block-title d-flex">
+                  <Col xs={10}>
+                      <h4>Best Selling Products</h4>
+                  </Col>
+                  <Col className="view-all">
+                      <a href=""><FontAwesomeIcon icon={faEye} /> View All</a>
+                  </Col>
+              </div>
             <div className="products">
               <Card>
                 <Card.Img variant="top" src="https://naychistationery.com/wp-content/uploads/2021/06/EB-Super-2-scaled-1-300x300.jpg" />
@@ -489,14 +512,14 @@ const LatestProductCategories = () =>{
 const Home = () => (
   <>
   
-    {/* <Header/> */}
+
         <Banner/>
         <Brands/>
         <DiscountProducts/>
         <NewArrivalProducts/>
         <BestSellingProducts/>
         <LatestProductCategories/>
-    {/* <Footer/> */}
+    
   </>
   
 );
