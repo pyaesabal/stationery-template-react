@@ -1,3 +1,5 @@
+import React from 'react';
+import { Link } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -8,10 +10,12 @@ import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
 import { faSearch, faCartPlus } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link } from "react-router-dom";
-import React from 'react';
+import LoginModal from './part/modal/LoginModal';
+import RegisterModal from './part/modal/RegisterModal';
 
 const Header = () =>{
+  const [showLogin,setShowLogin] = React.useState(false);
+  const [showRegister,setShowRegister] = React.useState(false);
     return (
       <>
         <div className="header-top mt-3 desktop">
@@ -26,8 +30,16 @@ const Header = () =>{
               </Col>
               <Col>
                 <Row className="info">
-                  <Col>Login</Col>
-                  <Col>Register</Col>
+                  <Col>
+                    <Button variant="primary" onClick={() => setShowLogin(true)}>
+                    Login
+                    </Button>
+                  </Col>
+                  <Col>
+                    <Button variant="primary" onClick={() => setShowRegister(true)}>
+                    Register
+                    </Button>
+                  </Col>
                   <Col className="d-none d-xs-block "><FontAwesomeIcon icon={faCartPlus} />$0.0</Col>
                   <Col className="d-none d-xs-block "><FontAwesomeIcon icon={faCartPlus} />$0.0</Col>
                   <Col><FontAwesomeIcon icon={faCartPlus} />$0.0</Col>
@@ -56,9 +68,16 @@ const Header = () =>{
                       </Nav>
                     </Navbar.Collapse>
             </Container>
-          </Navbar>
-          
+          </Navbar>          
         </div>
+        <LoginModal
+          show={showLogin}
+          onHide={() => setShowLogin(false)}
+        />
+        <RegisterModal
+          show={showRegister}
+          onHide={() => setShowRegister(false)}
+        />
       </>
     );
   };

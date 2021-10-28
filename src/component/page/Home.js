@@ -201,7 +201,7 @@ const DiscountProducts = () =>{
                       <h4>Discount Products</h4>
                   </Col>
                   <Col className="view-all">
-                      <a href=""><FontAwesomeIcon icon={faEye} /> View All</a>
+                      <a href="#hhh"><FontAwesomeIcon icon={faEye} /> View All</a>
                   </Col>
               </div>
               
@@ -310,7 +310,7 @@ const NewArrivalProducts = () =>{
                       <h4>New Arrival Products</h4>
                   </Col>
                   <Col className="view-all">
-                      <a href=""><FontAwesomeIcon icon={faEye} /> View All</a>
+                      <a href="/"><FontAwesomeIcon icon={faEye} /> View All</a>
                   </Col>
               </div>
               <div className="products">
@@ -381,7 +381,7 @@ const BestSellingProducts = () =>{
                       <h4>Best Selling Products</h4>
                   </Col>
                   <Col className="view-all">
-                      <a href=""><FontAwesomeIcon icon={faEye} /> View All</a>
+                      <a href="/"><FontAwesomeIcon icon={faEye} /> View All</a>
                   </Col>
               </div>
             <div className="products">

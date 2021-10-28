@@ -127,7 +127,7 @@ nav{
   background-color: #b80000;
   border-color: #b80000;
 }
-.form-control{
+.header-top .form-control{
   border: 2px solid #b80000;
 }
 svg.svg-inline--fa.fa-cart-plus.fa-w-18 {
@@ -239,6 +239,57 @@ span.price,.discount-price {
 .block-title .view-all a{
   color: #212529;
   text-decoration: none;
+}
+.or{
+  position: relative;
+}
+.or::before,.or::after{
+  content: "";
+  width: 40%;
+  height: 2px;
+  position: absolute;
+  border: 1px solid #f6f8f7;
+  ;
+  left: 0;
+  top: 12px;
+
+}
+.or::after{
+  right: 0;
+  left: auto;
+}
+.btn-submit {
+  width: 100%;
+  margin-top: 20px;
+}
+.form-field {
+  background: #f6f8f7;
+  padding: 20px ;
+}
+.modal-title {
+  color: #b80000;
+}
+.btn-submit {
+  color: #ffffff;
+  background-color: #b80000;
+  border-color: #b80000;
+}
+.fb-icon,.google-icon{
+    margin: 0 20px ;
+    font-size: 30px;
+}
+.fb-icon{
+  color: #0a58ca;
+}
+.google-icon{
+  color: #F4B400;
+}
+.modal-header {
+  border-bottom: none;
+  background: #b80000;
+}
+.modal-title {
+  color: #ffffff;
 }
 
 @media (max-width: 576px){
