@@ -21,7 +21,7 @@ const Banner = () =>{
     <>
       <Container>
         <Row className="mt-4 banner">
-          <Col className="p-0">
+          <Col className="p-0 left-side">
             <ListGroup>
               <ListGroup.Item>
                 <FontAwesomeIcon icon={faGift} />

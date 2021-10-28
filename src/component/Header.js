@@ -21,7 +21,7 @@ const Header = () =>{
         <div className="header-top mt-3 desktop">
           <Container>
             <Row>
-              <Col><h3>Logo Here</h3></Col>
+              <Col xs={2}><a href="/"><h3>Logo Here</h3></a></Col>
               <Col xs={6}>
                 <InputGroup className="mb-3">
                   <FormControl placeholder="Type Here To Search" aria-label="Type Here To Search" aria-describedby="basic-addon2" />
@@ -31,12 +31,12 @@ const Header = () =>{
               <Col>
                 <Row className="info">
                   <Col>
-                    <Button variant="primary" onClick={() => setShowLogin(true)}>
+                    <Button variant="link" className="login-btn" onClick={() => setShowLogin(true)}>
                     Login
                     </Button>
                   </Col>
                   <Col>
-                    <Button variant="primary" onClick={() => setShowRegister(true)}>
+                    <Button variant="link" className="reg-btn" onClick={() => setShowRegister(true)}>
                     Register
                     </Button>
                   </Col>
@@ -54,7 +54,7 @@ const Header = () =>{
                       <Nav className="me-auto">
                         <Nav.Link as={Link} to="/" >Home</Nav.Link>
                         <Nav.Link as={Link} to="/brands">Brands</Nav.Link>
-                        <Nav.Link href="#pricing">All Categories</Nav.Link>
+                        <Nav.Link as={Link} to="/allcategories">All Categories</Nav.Link>
                         <Nav.Link href="#pricing">Tracking Order</Nav.Link>
                         <Nav.Link href="#pricing">Contact Us</Nav.Link>
                         <Nav.Link as={Link} to="/about">About</Nav.Link>

@@ -36,9 +36,19 @@
     transform: rotate(360deg);
   }
 }
+a{
+  text-decoration: none;
+}
 .list-group-item {
   padding: 9px 5px 9px 20px;
   border: 1px solid rgb(255 255 255);
+}
+.info .btn-link {
+  color: #212529;
+  text-decoration: none;
+}
+.info .btn:focus {
+  box-shadow: none;
 }
 .banner{
   border-top: 2px solid #b80000;
@@ -65,11 +75,15 @@
 .products .card img{
   padding: 30px;
 }
-@media (min-width: 1200px){
+.banner .left-side{
+  height: 330px;
+  overflow-y:scroll;
+}
+/* @media (min-width: 1200px){
   .container {
       max-width: 1420px;
   }
-}
+} */
 .block-title{
   width: 100%;
   border-bottom: 1px solid #b80000;
@@ -201,7 +215,7 @@ svg.svg-inline--fa.fa-cart-plus.fa-w-18 {
 
 .dropright .dropdown-toggle:after { display: inline-block; margin-left: 0.255em ; vertical-align: 0.255em ; content: ""; border-top: 0.3em solid transparent; border-right: 0; border-bottom: 0.3em solid transparent; border-left: 0.3em solid; }
 .dropright .dropdown-toggle:after {
-  margin-left: 12.255em;
+  margin-left: 6.255em;
 }
 button#dropdown-button-drop-right {
   text-align: right;
@@ -266,10 +280,24 @@ span.price,.discount-price {
   background: #f6f8f7;
   padding: 20px ;
 }
+.reg-field{
+  background-color: #f6f8f7;
+  padding: 20px;
+  margin: 10px;
+}
+.reg-btn{
+  width: 50%;
+  margin: 0 auto;
+}
+.reg-btn button,.reg-btn button:hover{
+  width: 100%;
+  background: #b80000;
+  border: #b80000;
+}
 .modal-title {
   color: #b80000;
 }
-.btn-submit {
+.btn-submit,.btn-submit:hover {
   color: #ffffff;
   background-color: #b80000;
   border-color: #b80000;
