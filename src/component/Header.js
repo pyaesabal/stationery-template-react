@@ -15,7 +15,7 @@ import RegisterModal from './part/modal/RegisterModal';
 import TrackingOrderModal from './part/modal/TrackingOrderModal';
 
 const Header = () =>{
-  const [showLogin,setShowLogin] = React.useState(false);
+  const [showLogin,setShowLogin] = React.useState(false); 
   const [showRegister,setShowRegister] = React.useState(false);
   const [showTrackingOrder,setShowTrackingOrder] = React.useState(false);
     return (
@@ -24,7 +24,7 @@ const Header = () =>{
           <Container>
             <Row>
               <Col xs={2}><a href="/"><h3>Logo Here</h3></a></Col>
-              <Col xs={6}>
+              <Col xs={7}>
                 <InputGroup className="mb-3">
                   <FormControl placeholder="Type Here To Search" aria-label="Type Here To Search" aria-describedby="basic-addon2" />
                   <Button variant="outline-secondary" id="button-addon2"><FontAwesomeIcon icon={faSearch} /></Button>

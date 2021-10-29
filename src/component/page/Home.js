@@ -193,7 +193,6 @@ const Brands = () =>{
 
 const DiscountProducts = () =>{
   return (
-    <>
       <Container>
             <Row>
               <div className="block-title d-flex">
@@ -201,7 +200,7 @@ const DiscountProducts = () =>{
                       <h4>Discount Products</h4>
                   </Col>
                   <Col className="view-all">
-                      <a href="#hhh"><FontAwesomeIcon icon={faEye} /> View All</a>
+                      <a href="/"><FontAwesomeIcon icon={faEye} /> View All</a>
                   </Col>
               </div>
               
@@ -295,8 +294,6 @@ const DiscountProducts = () =>{
               </div>
           </Row>
       </Container>
-    </>
-    
   )
 }
 

@@ -36,8 +36,13 @@
     transform: rotate(360deg);
   }
 }
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 body{
   color: #424242;
+  font-family: 'Oxygen', sans-serif;
+}
+.form-control:focus{
+  box-shadow: none;
 }
 a{
   text-decoration: none;
@@ -409,4 +414,9 @@ span.cat-number {
 .btn-track {
   width: auto;
   margin-top: 0;
+}
+.contact-icons svg{
+  margin-right: 10px ;
+  color: #b80000;
+  font-size: 20px;
 }

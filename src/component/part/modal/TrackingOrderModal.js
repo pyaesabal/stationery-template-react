@@ -1,7 +1,8 @@
 import React from "react";
 import Button from 'react-bootstrap/Button';
-import { Form } from "react-bootstrap";
 import Modal from 'react-bootstrap/Modal';
+import { InputGroup } from "react-bootstrap";
+import { FormControl } from "react-bootstrap";
 function TrackingOrderModal(props) {
     return (
         <Modal
@@ -17,19 +18,10 @@ function TrackingOrderModal(props) {
         </Modal.Header>
         <Modal.Body>
             <p>To track your order please enter your Order ID in the box below and press the "Track" button.This was given to you on your receipt and in the confirmation email you should have received.</p>
-            <Form>
-                <div className="form-field">
-                    <Form.Group className="mb-3 tracking" controlId="formTracking">
-                        <Form.Control type="text" placeholder="Enter Order Number" />
-                    </Form.Group>
-                    <Button variant="primary" type="submit" className="btn-submit btn-track">
-                    Track
-                </Button>
-
-                </div>
-              
-                
-            </Form>
+            <InputGroup className="mb-3">
+              <FormControl placeholder="Enter Order Number" aria-label="Order Number" aria-describedby="basic-addon2" />
+              <Button variant="outline-secondary" id="button-addon2"> Track </Button>
+            </InputGroup>
                 
                
                 {/* <Col>
