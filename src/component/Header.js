@@ -12,10 +12,12 @@ import { faSearch, faCartPlus } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import LoginModal from './part/modal/LoginModal';
 import RegisterModal from './part/modal/RegisterModal';
+import TrackingOrderModal from './part/modal/TrackingOrderModal';
 
 const Header = () =>{
   const [showLogin,setShowLogin] = React.useState(false);
   const [showRegister,setShowRegister] = React.useState(false);
+  const [showTrackingOrder,setShowTrackingOrder] = React.useState(false);
     return (
       <>
         <div className="header-top mt-3 desktop">
@@ -55,10 +57,9 @@ const Header = () =>{
                         <Nav.Link as={Link} to="/" >Home</Nav.Link>
                         <Nav.Link as={Link} to="/brands">Brands</Nav.Link>
                         <Nav.Link as={Link} to="/allcategories">All Categories</Nav.Link>
-                        <Nav.Link as={Link} to="/trackingorders">Tracking Order</Nav.Link>
+                        <Nav.Link onClick={() => setShowTrackingOrder(true)}>TrackingOrder</Nav.Link>
                         <Nav.Link as={Link} to="/contactus">Contact Us</Nav.Link>
-                        <Nav.Link as={Link} to="/about">About</Nav.Link>
-                        
+                        <Nav.Link as={Link} to="/about">About Us</Nav.Link>
                         
                       </Nav>
                       <Nav className="right-menu">
@@ -77,6 +78,10 @@ const Header = () =>{
         <RegisterModal
           show={showRegister}
           onHide={() => setShowRegister(false)}
+        />
+        <TrackingOrderModal
+          show={showTrackingOrder}
+          onHide={() => setShowTrackingOrder(false)}
         />
       </>
     );
