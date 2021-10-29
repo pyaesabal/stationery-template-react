@@ -12,7 +12,7 @@ const ContactUs = () =>{
                         <Col>
                             <div className="mapouter">
                                 <div className="gmap_canvas">
-                                    <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Shwe%20Moe%20Kaung%20Condo&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                                    <iframe title="Google Map" width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Shwe%20Moe%20Kaung%20Condo&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
                                 </div>
                             </div>
                         </Col>
